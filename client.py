@@ -35,7 +35,7 @@ chat = False
 userName = input("please input username: ")
 try:
     print("type exit at any time to disconnect\nattempting to connect...")
-    sio.connect('http://localhost:5000')
+    sio.connect('http://localhost:3000')
     # set user name to be the string entered by the user, and append a # followed by the first 5 digits of the sid
     userName = userName + "#" + sio.sid[0:5]
     chat = True
