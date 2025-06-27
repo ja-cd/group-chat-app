@@ -6,7 +6,6 @@ app = socketio.WSGIApp(sio, static_files={
     '/': {'content_type': 'text/html', 'filename': 'index.html'}
 })
 
-
 @sio.event
 def connect(sid, environ):
     sio.emit('usercon', sid)
